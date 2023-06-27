@@ -1,0 +1,30 @@
+C:\Сергеев\Otdel kadrov\bin\Debug\Otdel kadrov.exe.config
+C:\Сергеев\Otdel kadrov\bin\Debug\Otdel kadrov.exe
+C:\Сергеев\Otdel kadrov\bin\Debug\Otdel kadrov.pdb
+C:\Сергеев\Otdel kadrov\bin\Debug\EntityFramework.dll
+C:\Сергеев\Otdel kadrov\bin\Debug\EntityFramework.SqlServer.dll
+C:\Сергеев\Otdel kadrov\bin\Debug\EntityFramework.xml
+C:\Сергеев\Otdel kadrov\bin\Debug\EntityFramework.SqlServer.xml
+C:\Сергеев\Otdel kadrov\bin\Debug\ru\EntityFramework.resources.dll
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.csproj.AssemblyReference.cache
+C:\Сергеев\Otdel kadrov\obj\Debug\MainWindow.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\App.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov_Content.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov_MarkupCompile.cache
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov_MarkupCompile.lref
+C:\Сергеев\Otdel kadrov\obj\Debug\MainWindow.baml
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.g.resources
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel_kadrov.Properties.Resources.resources
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.csproj.GenerateResource.cache
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.csproj.CoreCompileInputs.cache
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.csproj.CopyComplete
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.exe
+C:\Сергеев\Otdel kadrov\obj\Debug\Otdel kadrov.pdb
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\DogovorPages.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\MenuPages.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\RabotodateliPages.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\SoiskateliPages.g.cs
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\DogovorPages.baml
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\MenuPages.baml
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\RabotodateliPages.baml
+C:\Сергеев\Otdel kadrov\obj\Debug\Pages\SoiskateliPages.baml

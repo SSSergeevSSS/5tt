@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Otdel_kadrovModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dogovor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Soiskateli" Type="int" Nullable="false" />
+    <Property Name="ID_Rabotodateli" Type="int" Nullable="false" />
+    <Property Name="Dolznost" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rabotodateli">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="Vid_deatelnosti" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="Address" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="Phone" Type="nchar" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="Soiskateli">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Surname" Type="nchar" MaxLength="15" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="15" Nullable="false" />
+    <Property Name="Patronymic" Type="nchar" MaxLength="15" />
+    <Property Name="Kvalifikacia" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Vid_deatelnosti" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="Phone" Type="nchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Dogovor_Rabotodateli">
+    <End Role="Rabotodateli" Type="Self.Rabotodateli" Multiplicity="1" />
+    <End Role="Dogovor" Type="Self.Dogovor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rabotodateli">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dogovor">
+        <PropertyRef Name="ID_Rabotodateli" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dogovor_Soiskateli">
+    <End Role="Soiskateli" Type="Self.Soiskateli" Multiplicity="1" />
+    <End Role="Dogovor" Type="Self.Dogovor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Soiskateli">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Dogovor">
+        <PropertyRef Name="ID_Soiskateli" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Otdel_kadrovModelContainer">
+    <EntitySet Name="Dogovor" EntityType="Self.Dogovor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rabotodateli" EntityType="Self.Rabotodateli" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Soiskateli" EntityType="Self.Soiskateli" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Dogovor_Rabotodateli" Association="Self.FK_Dogovor_Rabotodateli">
+      <End Role="Rabotodateli" EntitySet="Rabotodateli" />
+      <End Role="Dogovor" EntitySet="Dogovor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dogovor_Soiskateli" Association="Self.FK_Dogovor_Soiskateli">
+      <End Role="Soiskateli" EntitySet="Soiskateli" />
+      <End Role="Dogovor" EntitySet="Dogovor" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
